@@ -25,5 +25,5 @@ phases:
       - go build
 artifacts:
   files:
-    - 'awssampleapp'
-  name: awssampleapp_${GOOS}_${GOARCH}_$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
+    - 'aws_golang'
+  name: aws_golang_${GOOS}_${GOARCH}_$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
